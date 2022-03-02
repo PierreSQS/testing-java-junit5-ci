@@ -38,6 +38,7 @@ jobs:
                   key: v1-dependencies-{{ checksum "pom.xml" }}
 
             # run tests!
-            - run: mvn integration-test
+            # Added a -V option (added by Pierrot 02.03.2022
+            - run: mvn -V integration-test
 
 
